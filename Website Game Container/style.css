@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background: lightgray;
 }
 #container {
     min-height: 100%;
@@ -9,18 +10,36 @@ html, body {
 }
 #header {   
     text-align: center;
-    background: #dce3e2;
+    background-image: url("imgs/wbg.jpg");
     padding: 10px;
+    
+}
+
+h1{
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    color:lightgray;
+    text-shadow: 2px 2px black;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.4px;
+    word-spacing: 2.4px;
+    color: #D8D8D8;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: capitalize;
 }
 
 #body {
-    padding: 10px;
-    padding-bottom: 10px; 
+    padding: 50px;
+    padding-bottom: 50px; 
 }
 
 
 #footer {
-    position: absolute;
     height: 6px;
     width: 100%;
     bottom: 0;
@@ -33,5 +52,48 @@ html, body {
 
 p1 {
     font-size: 15px;
+}
 
+ul {
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    
+}
+
+li {
+    display: inline;
+}
+
+li a {
+
+    text-decoration: none;
+    color: black;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 23px;
+    letter-spacing: 0.4px;
+    word-spacing: 2.4px;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: capitalize;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-right: 1px solid #000;
+}
+
+li:last-child a {
+    
+    border: none;
+
+}
+
+#gamecontainer{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    height: 400px;
+    background-color: rgba(135, 167, 168, 0.664);
+    border: 3px dotted grey;
 }
