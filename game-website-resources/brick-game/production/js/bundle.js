@@ -4277,7 +4277,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = {
     score: 0,
     level: 1,
-    lives: 3
+    lives: 5
 };
 
 /***/ }),
@@ -21408,7 +21408,7 @@ exports.default = {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! babel-polyfill */133);
-module.exports = __webpack_require__(/*! C:\Users\abstorey\onedrive\intro-to-it\breakout\phaser-es6-webpack\src\main.js */335);
+module.exports = __webpack_require__(/*! C:\Users\abstorey\OneDrive\intro-to-it\breakout\phaser-es6-webpack\src\main.js */335);
 
 
 /***/ }),
@@ -28141,8 +28141,8 @@ var _class = function (_Phaser$State) {
 
       this.ballOnPaddle = false;
 
-      this.ball.body.velocity.y = -500;
-      this.ball.body.velocity.x = 0;
+      this.ball.body.velocity.y = -300;
+      this.ball.body.velocity.x = -50;
     }
   }, {
     key: 'setUpBall',
@@ -28181,7 +28181,7 @@ var _class = function (_Phaser$State) {
   }, {
     key: 'setUpPaddle',
     value: function setUpPaddle() {
-      this.paddle = new _Paddle2.default(this.game, this.game.world.centerX, this.game.world.height - 200);
+      this.paddle = new _Paddle2.default(this.game, this.game.world.centerX, this.game.world.height - 400);
 
       this.game.add.existing(this.paddle);
     }
@@ -28194,8 +28194,8 @@ var _class = function (_Phaser$State) {
   }, {
     key: 'generateBricks',
     value: function generateBricks(bricksGroup) {
-      var rows = 5;
-      var columns = 10;
+      var rows = 3;
+      var columns = 6;
       var xOffset = 50;
       var yOffset = 45;
       var brick = void 0;
@@ -28217,15 +28217,15 @@ var _class = function (_Phaser$State) {
   }, {
     key: 'setUpText',
     value: function setUpText() {
-      this.scoreText = this.createText(20, 20, 'left', 'Score: ' + this.game.global.score);
-      this.livesText = this.createText(0, 20, 'center', 'Lives: ' + this.game.global.lives);
-      this.levelText = this.createText(-20, 20, 'right', 'Level: ' + this.game.global.level);
+      this.levelText = this.createText(20, 20, 'left', 'Level: ' + this.game.global.level);
+      this.scoreText = this.createText(0, 20, 'center', 'Score: ' + this.game.global.score);
+      this.livesText = this.createText(-20, 20, 'right', 'Lives Remaining: ' + this.game.global.lives);
     }
   }, {
     key: 'createText',
     value: function createText(xOffset, yOffset, align, text) {
       return this.game.add.text(xOffset, yOffset, text, {
-        font: '18px Arial',
+        font: '18px Verdana',
         fill: '#000',
         boundsAlignH: align
       }).setTextBounds(0, 0, this.game.world.width, 0);
@@ -28514,8 +28514,8 @@ var _class = function (_Phaser$State) {
   }, {
     key: 'create',
     value: function create() {
-      var text = this.add.text(this.game.width * 0.5, this.game.height * 0.5, 'Game Over\n\nYou reached level ' + this.game.global.level + ' with score ' + this.game.global.score, {
-        font: '24px Arial',
+      var text = this.add.text(this.game.width * 0.5, this.game.height * 0.5, 'Game Over!\n\nYou got to level ' + this.game.global.level + ' with a score of ' + this.game.global.score + '\n\n(Click to play again)', {
+        font: '24px Verdana',
         fill: '#000',
         align: 'center'
       });
