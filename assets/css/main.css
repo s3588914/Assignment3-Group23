@@ -54,7 +54,9 @@
 		margin-top: 15px;
 	}
 
-
+	.points{
+		padding-left: 60px;
+	}
 /* Box Model */
 
 	*, *:before, *:after {

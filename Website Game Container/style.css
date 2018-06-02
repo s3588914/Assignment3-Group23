@@ -109,3 +109,7 @@ li:last-child a {
     border: 3px dotted grey;
     border-radius: 20px;
 }
+
+#points{
+    padding-left: 20px;
+}
