@@ -88,14 +88,14 @@
 											<h4>What will our project do?</h4>
 										<p>	Our project idea is to preload a Raspberry Pi with simple programmable games. 
 											This game device is marketed towards primary school children, as programming and coding in primary schools is becoming increasingly popular and essential in today's educational society.
-										<br />
+										<br /><br />
 											This type of device is great for those with little-to-no knowledge on programming, because the games available will be entertaining and easy to manipulate as the game codes will be annotated, making it easier for users to modify. 
 											This device would serve well in schools, and has many applications.
 										 	 One example would be a fantastic group project or assignment for kids to explore coding.
-										<br />
+										<br /><br />
 											Our objective is to create a straightforward device to use, so instructors can understand and help kids get started quickly and easily - we want this to be as simple as “Plug and Play”. 
 											Built on a Raspberry Pi, it is extremely portable. All the user needs is a monitor with HDMI.
-										<br />
+										<br /><br />
 											There will be an included controller that will be very customisable in the sense that users could add and map different buttons and controls to perform different actions in the games. 
 											This helps teach interfacing software and hardware. 
 										</p>
@@ -110,16 +110,28 @@
 											<h4>How far we have gotten with developing any features or outcomes from our project?</h4>
 
 										<p>	At this point in time, we have chosen a game library called Phaser, which is an HTML5/JS framework to assist in creating browser-based games. Using this language, we developed a basic “brick” game which involves using a paddle to deflect a ball to knock out all the “bricks” above.
-										<br/ >
-										We have also obtained a Raspberry Pi Model 3B+, and the parts required to build a basic controller that consists of a joystick and 2 buttons. We installed Raspbian on the Pi as the base OS, and also constructed a basic controller using a box as the shell. The controller has a USB 2.0 Type A interface which can plug directly into the Raspberry Pi.
-										<br />
-										We have also created a website container for future games which can be expanded as required. The development of the container to house the games has not been completed, what we currently have is more a proof-of-concept, however the layout will remain similar if not the same should we have made further progress. This website can be adapted to run off a Node.js server, or it can remain as a simple HTML/CSS website, served directly off the Pi’s filesystem.
+										<br/ ><br />
+											We have also obtained a Raspberry Pi Model 3B+, and the parts required to build a basic controller that consists of a joystick and 2 buttons. We installed Raspbian on the Pi as the base OS, and also constructed a basic controller using a box as the shell. The controller has a USB 2.0 Type A interface which can plug directly into the Raspberry Pi.
+										<br /><br />
+											We have also created a website container for future games which can be expanded as required. The development of the container to house the games has not been completed, what we currently have is more a proof-of-concept, however the layout will remain similar if not the same should we have made further progress. This website can be adapted to run off a Node.js server, or it can remain as a simple HTML/CSS website, served directly off the Pi’s filesystem.
 										</p>
 											
 											<h4>How it began? How it has progressed? What stage of the plan we are up to? 	</h4>
 											
-											<p>Vestibulum pellentesque posuere lorem non aliquam. Mauris eleifend eleifend
-											felis aliquet ornare. Vestibulum porta velit at elementum elementum.</p>
+											<p> It began with our main motivation which was to encourage students at a primary school age to check out coding and programming earlier on in their education, as different types of development is quickly becoming a highly sought-after skill in the IT industry. With our product, the end user can directly edit the game source code, this way kids will get a hands-on learning experience to modify and change the way a particular game works. This helps bring out creativity, and encourages them to think outside the box.
+											<br /><br />
+												Currently, in the market there is no Raspberry Pi devices with our product idea directly marketed towards children. The closest competitor would be Makey Makey is quite similar in the sense that their product is encourage the user to tinker with a device and using their imagination and creativity. Makey Makey is a device which can change basically anything that can conduct a small electric current into a controller by using alligator clips to interface directly into their PCB board. However, they  do not require any programming or coding - not allowing any modifications.
+											<br /><br />
+												As of today, we have created a controller, created and programmed a basic proof-of-concept game, and started work on a simple website container to host the game. While the container website is not complete, the basic wireframe and layout has been chosen and created (which can be seen down below).
+											<br /><br />
+											<img src="images/website.jpg" alt="" width="100%" height="100%" >
+											<br /><br />
+												In regards to the game controller interfacing with the Raspberry Pi, we are yet to establish a successful connection to directly control the POC game we developed. This is because we have not yet chosen or created an HID adapter to listen and map the input from the controller, to key-down events on the Pi. 
+											<br /><br />
+												Our next steps will be to successfully interface the controller to our game by developing a HID adapter to run in the background on the Raspberry Pi, to handle the input. Also to merge the game with the website container, and finish off programming for the game. This also includes cleaning up the source code, commenting and documenting the various methods and classes, and deciding if the code will run on a local Node server or compile to a includable JavaScript file.
+											<br /><br />
+												If funded, we would hire IT professionals to help advance the device to the next stage, implementing additional games, and make it easier for kids to play and modify. (Developer with web/game experience, technical lead, business analyst and product marketer).
+											</p>
 											
 											<h4>Dead-ends that we have followed? Decisions we made? Changes that have been made to the project plan?</h4>
 											
