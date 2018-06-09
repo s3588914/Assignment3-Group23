@@ -1773,6 +1773,9 @@
 	}
 
 /* List */
+	ul.dot {
+    list-style-type: circle;
+	}
 
 	ul.default {
 		list-style: disc;
@@ -1845,7 +1848,10 @@
 		ol.default li {
 			padding-left: 0.25em;
 		}
-
+		
+	ul.dot {
+			list-style-type: circle;
+			}
 /* Form */
 
 	form .actions {
